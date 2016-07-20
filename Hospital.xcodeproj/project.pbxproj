@@ -13,6 +13,8 @@
 		7DADE34B1D3FCDFC00792225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DADE34A1D3FCDFC00792225 /* Assets.xcassets */; };
 		7DADE34E1D3FCDFC00792225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DADE34C1D3FCDFC00792225 /* LaunchScreen.storyboard */; };
 		7DADE3591D3FCDFC00792225 /* HospitalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DADE3581D3FCDFC00792225 /* HospitalTests.swift */; };
+		C4D0758E187CD6FD620C3971 /* Pods_Hospital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916C6C63C2C01372F5D58346 /* Pods_Hospital.framework */; };
+		E9AA88DABC6B445A41C9D22D /* Pods_HospitalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B0176B9B123EB98D669DB9 /* Pods_HospitalTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B00896DBD1B57C535C401DC /* Pods-Hospital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospital.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hospital/Pods-Hospital.release.xcconfig"; sourceTree = "<group>"; };
+		545046D8834607434FAA0043 /* Pods-HospitalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HospitalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HospitalTests/Pods-HospitalTests.release.xcconfig"; sourceTree = "<group>"; };
+		6D30BA327E0A023C9798D581 /* Pods-HospitalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HospitalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HospitalTests/Pods-HospitalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7DADE3401D3FCDFC00792225 /* Hospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DADE3431D3FCDFC00792225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DADE3451D3FCDFC00792225 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +41,9 @@
 		7DADE3541D3FCDFC00792225 /* HospitalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HospitalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DADE3581D3FCDFC00792225 /* HospitalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalTests.swift; sourceTree = "<group>"; };
 		7DADE35A1D3FCDFC00792225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		916C6C63C2C01372F5D58346 /* Pods_Hospital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hospital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B0176B9B123EB98D669DB9 /* Pods_HospitalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HospitalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7A500CEFEE464199F4501D9 /* Pods-Hospital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hospital/Pods-Hospital.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4D0758E187CD6FD620C3971 /* Pods_Hospital.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9AA88DABC6B445A41C9D22D /* Pods_HospitalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				7DADE3421D3FCDFC00792225 /* Hospital */,
 				7DADE3571D3FCDFC00792225 /* HospitalTests */,
 				7DADE3411D3FCDFC00792225 /* Products */,
+				EA535C6F93A44A086E4A41DB /* Pods */,
+				FFE13743E79839FA504382C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,26 @@
 			path = HospitalTests;
 			sourceTree = "<group>";
 		};
+		EA535C6F93A44A086E4A41DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7A500CEFEE464199F4501D9 /* Pods-Hospital.debug.xcconfig */,
+				0B00896DBD1B57C535C401DC /* Pods-Hospital.release.xcconfig */,
+				6D30BA327E0A023C9798D581 /* Pods-HospitalTests.debug.xcconfig */,
+				545046D8834607434FAA0043 /* Pods-HospitalTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FFE13743E79839FA504382C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				916C6C63C2C01372F5D58346 /* Pods_Hospital.framework */,
+				A1B0176B9B123EB98D669DB9 /* Pods_HospitalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DADE35D1D3FCDFC00792225 /* Build configuration list for PBXNativeTarget "Hospital" */;
 			buildPhases = (
+				9DA242E45CE5B0E2842BAF2E /* [CP] Check Pods Manifest.lock */,
 				7DADE33C1D3FCDFC00792225 /* Sources */,
 				7DADE33D1D3FCDFC00792225 /* Frameworks */,
 				7DADE33E1D3FCDFC00792225 /* Resources */,
+				78636BAB270C982011DFEF2F /* [CP] Embed Pods Frameworks */,
+				A2E76454BF6A7D2C82EBA1BE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DADE3601D3FCDFC00792225 /* Build configuration list for PBXNativeTarget "HospitalTests" */;
 			buildPhases = (
+				1F6658BCD91415DE1BC77AB5 /* [CP] Check Pods Manifest.lock */,
 				7DADE3501D3FCDFC00792225 /* Sources */,
 				7DADE3511D3FCDFC00792225 /* Frameworks */,
 				7DADE3521D3FCDFC00792225 /* Resources */,
+				5698BB7890CEB603792D42BF /* [CP] Embed Pods Frameworks */,
+				B5062631F57F5073B9CBAB3A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +229,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F6658BCD91415DE1BC77AB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5698BB7890CEB603792D42BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HospitalTests/Pods-HospitalTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78636BAB270C982011DFEF2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hospital/Pods-Hospital-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DA242E45CE5B0E2842BAF2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A2E76454BF6A7D2C82EBA1BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hospital/Pods-Hospital-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5062631F57F5073B9CBAB3A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HospitalTests/Pods-HospitalTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7DADE33C1D3FCDFC00792225 /* Sources */ = {
@@ -325,6 +456,7 @@
 		};
 		7DADE35E1D3FCDFC00792225 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7A500CEFEE464199F4501D9 /* Pods-Hospital.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Hospital/Info.plist;
@@ -336,6 +468,7 @@
 		};
 		7DADE35F1D3FCDFC00792225 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B00896DBD1B57C535C401DC /* Pods-Hospital.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Hospital/Info.plist;
@@ -347,6 +480,7 @@
 		};
 		7DADE3611D3FCDFC00792225 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D30BA327E0A023C9798D581 /* Pods-HospitalTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = HospitalTests/Info.plist;
@@ -359,6 +493,7 @@
 		};
 		7DADE3621D3FCDFC00792225 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 545046D8834607434FAA0043 /* Pods-HospitalTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = HospitalTests/Info.plist;
@@ -388,6 +523,7 @@
 				7DADE35F1D3FCDFC00792225 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DADE3601D3FCDFC00792225 /* Build configuration list for PBXNativeTarget "HospitalTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +532,7 @@
 				7DADE3621D3FCDFC00792225 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
