@@ -14,7 +14,7 @@ struct AdvisoryBoardMember {
     }
 }
 
-extension AdvisoryBoardMember: Employee { }
+extension AdvisoryBoardMember: Payable, TimeOff { }
 
 
 struct Principal {
@@ -26,7 +26,7 @@ struct Principal {
     }
 }
 
-extension Principal: Employee, Reprimand { }
+extension Principal: Payable, TimeOff, Reprimand { }
 
 
 struct Teacher {
@@ -34,4 +34,4 @@ struct Teacher {
     var vacationDays: Int = 15
 }
 
-extension Teacher: Employee, Teach { }
+extension Teacher: Payable, TimeOff, Teach { }
