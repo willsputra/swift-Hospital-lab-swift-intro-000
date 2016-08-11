@@ -56,7 +56,7 @@ class ProtocolSpec: QuickSpec {
                 
                 expect(messageForSevere).to(equal("We are expelling you from the school!"))
                 expect(messageForLight).to(equal("You're to go back to class, don't do it again."))
-                expect(messageForMedium).to(equal("Why would you think that's a good idea?! Never again, go back to class."))
+                expect(messageForMedium).to(equal("Why would you think that's a good idea?! You're going to detention."))
                 
                 let messageForParentSevere = fakeJim.callParentDeliveringMessage(.Severe)
                 let messageForParentLight = fakeJim.callParentDeliveringMessage(.Light)
