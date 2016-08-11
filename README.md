@@ -46,7 +46,7 @@ A quick overview of the journey we're about to go on. We're going to create a `P
 
 If the case is Severe - "We are expelling you from the school!"  
 If the case is Light - "You're to go back to class, don't do it again."  
-If the case is Medium - "Why would you think that's a good idea?! Never again, go back to class."  
+If the case is Medium - "Why would you think that's a good idea?! You're going to detention."  
 
 In your implementation of the `callParentDeliveringMessage(_:)` method, it should switch on the `scale` argument and return the following `String` based upon that case:
 
