@@ -45,7 +45,7 @@ extension Reprimand {
         switch scale {
         case .Severe: return "We are expelling you from the school!"
         case .Light: return "You're to go back to class, don't do it again."
-        case .Medium: return "Why would you think that's a good idea?! Never again, go back to class."
+        case .Medium: return "Why would you think that's a good idea?! You're going to detention."
         }
     }
     
