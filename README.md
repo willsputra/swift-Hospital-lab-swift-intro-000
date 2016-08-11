@@ -112,7 +112,10 @@ So anyone that adopts this `Employee` protocol must also conform to the `Payable
 
 
 
-Feel free to test all of the above code you've created in the `ViewController.swift` file.
+You can test out your code in the `ViewController.swift` file, writing code in the `viewDidLoad()` function.
+
+ALSO!, there are two test files which are making sure you implement everything correctly. You can look at these tests in the `ProtocolTests.swift` file and the `SchoolEmployeeTests.swift` file.
+
 
 
 
