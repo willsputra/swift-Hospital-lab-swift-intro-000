@@ -1,25 +1,45 @@
-# Hospital
+# School
 
-![Toni](http://i.imgur.com/T5AZBMv.jpg?1)  
+![](http://i.imgur.com/wcCK78r.jpg?1)  
 
-> If there's a book that you want to read, but it hasn't been written yet, then you must write it. -[Toni Morrison](https://en.wikipedia.org/wiki/Toni_Morrison)
+> Tell me and I forget. Teach me and I remember. Involve me and I learn. -[Benjamin Franklin](https://en.wikipedia.org/wiki/Benjamin_Franklin)
  
-
-## Learning Objectives
-
-* 
+---
 
 
 
-## Outline / Notes
+# Protocol Oriented Programming (POP)
 
-* Included is an Xcode project.
-* This lab should have tests.
-* I like the idea of exploring the full scope of protocols in this lab and challenging the student to create them using the theme of a Hospital. Where historically, they might tackle the problem of creating the various roles in a Hospital using OOP, I say we go after it using Protocol Oriented Programming where the roles of the Hospital, Doctor, Employee, Nurse, Receptionist, etc etc are designed through protocols then when they have to create the various structs representing these specific roles, they can have them conform to the various protocols.
-* This lab doesn't need to have any UI elements to it (but it can if you want to make it pretty or dress it up some to correspond with what they have to do).
-* This was a general Idea I had, but feel free to approach this from an entirely different angle. I'm more interested in just having them get used to creating protocols, using extensions and be challenged doing so. The Hospital idea might be too hard, so I'm all ears. We can also provide some functionality where they can jump into a partially completed project.
-* I would like for this lab to have tests written using Quick & Nimble. 
-* I'm open to discuss ideas you might have for this particular lab at this time.
+POP = Protocol Oriented Programming  
+OOP = Object Oriented Programming
+
+Apple's advice for POP is "don't start with a class, start with a protocol". Lets do exactly that in this lab.
+
+We will be building our structures horizontally (POP) rather than vertically (OOP). When designing your various classes vertically, you're utilizing inheritance, creating a base class, then adding functionality through subclassing. 
+
+With protocols, we're not stuck with subclassing from one base class. We can adopt as many protocols as we need and plug them in, take them out as we please during our development cycle. 
+
+# Instructions
+
+We will be designing a school (focusing on the administrative side, not the students). Our end goal is to create three structures:
+* AdvisoryBoardMember
+* Principal
+* Teacher 
+
+In creating these three structures, there's a lot of similarity shared between them. Historically this problem was solved using inheritance (Object-Oriented Programming), but we're going to start with a protocol, not a class. And like I stated, we're going to be creating these as structures, not classes.
+
+A quick overview of the journey we're about to go on. We're going to create a `Payable`, `TimeOff`, `Teach`, `Employee` and `Reprimand` protocol. We will then extend each protocol to provide default implementation. After that we will create our three structures, `AdvisoryBoardMember`, `Principal`, and `Teacher`. Each of these structures will adopt and conform to the protocols we created, but some will conform to only a few. Not ever protocol will be adopted by every structure.
+
+**(1)** - In the `School.swift` file, create a protocol called `Payable` that has one function requirement. The name of the function should be `wages()`. It takes in no arguments but returns back a `Double`. 
+
+**(2)** - Below where you created the `Payable` protocol, create an extension on the `Payable` protocol and implement the `wages()` function. In your implementation, it should just return back `50_000.00`. Notice how I used an underbar here, this can act as a comma (as if you were writing it in on paper), it doesn't do anything in code. It just makes your code more readable instead of having to see a bunch of zeros next to each other.
+
+**(3)** - Still in the same file (`School.swift)`, create another protocol called `TimeOff` which includes a property named `vacationDays` of type `Int` that will be both gettable and settable. It should include a function called `requestForVacation(_:)` which takes in one argument named `days` of type `Int` and returns a `Bool`.
+
+**(4)** - Below this `TimeOff` protocol, create an extension on the `TimeOff` protocol where we will provide some default implementation to the `requestForVacation(_:)` function. In our implementation of the `requestForVacation(_:)` function, you should return `true` if and only if there are enough `vacationDays` to satisfy the request. If the `vacationDays` is equal to 9 and `requestForVacation(10)` is called by that instance (which will be our structure later on), then it should return `false`.
+
+**(5)** - In the same `School.swift` file, create a protocol called `Reprimand` 
+
 
 
 <a href='https://learn.co/lessons/AllTheThings' data-visibility='hidden'>View this lesson on Learn.co</a>

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BAF0D941D5CBD2A002DE5D5 /* HospitalEmployees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF0D931D5CBD2A002DE5D5 /* HospitalEmployees.swift */; };
+		5BAF0D961D5CBF2E002DE5D5 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF0D951D5CBF2E002DE5D5 /* School.swift */; };
+		5BAF0D981D5CC330002DE5D5 /* SchoolEmployees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF0D971D5CC330002DE5D5 /* SchoolEmployees.swift */; };
 		7DADE3441D3FCDFC00792225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DADE3431D3FCDFC00792225 /* AppDelegate.swift */; };
 		7DADE3461D3FCDFC00792225 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DADE3451D3FCDFC00792225 /* ViewController.swift */; };
 		7DADE3491D3FCDFC00792225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DADE3471D3FCDFC00792225 /* Main.storyboard */; };
@@ -30,6 +33,9 @@
 /* Begin PBXFileReference section */
 		0B00896DBD1B57C535C401DC /* Pods-Hospital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospital.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hospital/Pods-Hospital.release.xcconfig"; sourceTree = "<group>"; };
 		545046D8834607434FAA0043 /* Pods-HospitalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HospitalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HospitalTests/Pods-HospitalTests.release.xcconfig"; sourceTree = "<group>"; };
+		5BAF0D931D5CBD2A002DE5D5 /* HospitalEmployees.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitalEmployees.swift; sourceTree = "<group>"; };
+		5BAF0D951D5CBF2E002DE5D5 /* School.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		5BAF0D971D5CC330002DE5D5 /* SchoolEmployees.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolEmployees.swift; sourceTree = "<group>"; };
 		6D30BA327E0A023C9798D581 /* Pods-HospitalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HospitalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HospitalTests/Pods-HospitalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7DADE3401D3FCDFC00792225 /* Hospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DADE3431D3FCDFC00792225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,12 +95,15 @@
 		7DADE3421D3FCDFC00792225 /* Hospital */ = {
 			isa = PBXGroup;
 			children = (
+				5BAF0D931D5CBD2A002DE5D5 /* HospitalEmployees.swift */,
 				7DADE3431D3FCDFC00792225 /* AppDelegate.swift */,
 				7DADE3451D3FCDFC00792225 /* ViewController.swift */,
 				7DADE3471D3FCDFC00792225 /* Main.storyboard */,
 				7DADE34A1D3FCDFC00792225 /* Assets.xcassets */,
 				7DADE34C1D3FCDFC00792225 /* LaunchScreen.storyboard */,
 				7DADE34F1D3FCDFC00792225 /* Info.plist */,
+				5BAF0D951D5CBF2E002DE5D5 /* School.swift */,
+				5BAF0D971D5CC330002DE5D5 /* SchoolEmployees.swift */,
 			);
 			path = Hospital;
 			sourceTree = "<group>";
@@ -329,7 +338,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DADE3461D3FCDFC00792225 /* ViewController.swift in Sources */,
+				5BAF0D941D5CBD2A002DE5D5 /* HospitalEmployees.swift in Sources */,
+				5BAF0D981D5CC330002DE5D5 /* SchoolEmployees.swift in Sources */,
 				7DADE3441D3FCDFC00792225 /* AppDelegate.swift in Sources */,
+				5BAF0D961D5CBF2E002DE5D5 /* School.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
