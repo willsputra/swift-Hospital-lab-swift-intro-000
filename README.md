@@ -1,4 +1,4 @@
-# School
+# School Lab 
 
 ![](http://i.imgur.com/wcCK78r.jpg?1)  
 
@@ -6,9 +6,11 @@
  
 ---
 
+## Overview
 
+In this lab, we'll worth with enums, structs, protocols, and extensions. 
 
-# Protocol Oriented Programming (POP)
+## Protocol Oriented Programming (POP)
 
 POP = Protocol Oriented Programming  
 OOP = Object Oriented Programming
