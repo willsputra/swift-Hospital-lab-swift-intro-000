@@ -8,7 +8,7 @@
 
 ## Overview
 
-In this lab, we'll worth with enums, structs, protocols, and extensions. 
+In this lab, we'll work with enums, structs, protocols, and extensions. 
 
 ## Protocol Oriented Programming (POP)
 
@@ -21,7 +21,7 @@ We will be building our structures horizontally (POP) rather than vertically (OO
 
 With protocols, we're not stuck with subclassing from one base class. We can adopt as many protocols as we need and plug them in, take them out as we please during our development cycle. 
 
-# Instructions
+## Instructions
 
 We will be designing a school (focusing on the administrative side, not the students). Our end goal is to create three structures:
 * AdvisoryBoardMember
@@ -117,9 +117,6 @@ So anyone that adopts this `Employee` protocol must also conform to the `Payable
 You can test out your code in the `ViewController.swift` file, writing code in the `viewDidLoad()` function.
 
 ALSO!, there are two test files which are making sure you implement everything correctly. You can look at these tests in the `ProtocolTests.swift` file and the `SchoolEmployeeTests.swift` file.
-
-
-
 
 
 <a href='https://learn.co/lessons/AllTheThings' data-visibility='hidden'>View this lesson on Learn.co</a>
