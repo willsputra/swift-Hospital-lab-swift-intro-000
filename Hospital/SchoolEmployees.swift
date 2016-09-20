@@ -1,20 +1,17 @@
 //
 //  SchoolEmployees.swift
-//  Hospital
-
-
-
+//  School Employees
 
 struct AdvisoryBoardMember {
     var name: String
     var vacationDays: Int = 30
-    
+
     func wages() -> Double {
         return 100_000.00
     }
 }
 
-extension AdvisoryBoardMember: Payable, TimeOff { }
+extension AdvisoryBoardMember: Employee {}
 
 
 struct Principal {
@@ -26,7 +23,7 @@ struct Principal {
     }
 }
 
-extension Principal: Payable, TimeOff, Reprimand { }
+extension Principal: Employee, Reprimand {}
 
 
 struct Teacher {
@@ -34,4 +31,5 @@ struct Teacher {
     var vacationDays: Int = 15
 }
 
-extension Teacher: Payable, TimeOff, Teach { }
+extension Teacher: Employee, Teach {}
+
