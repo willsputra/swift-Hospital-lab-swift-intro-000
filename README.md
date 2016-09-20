@@ -40,23 +40,23 @@ A quick overview of the journey we're about to go on. We're going to create a `P
 
 **(4)** - Below this `TimeOff` protocol, create an extension on the `TimeOff` protocol where we will provide some default implementation to the `requestForVacation(_:)` function. In our implementation of the `requestForVacation(_:)` function, you should return `true` if and only if there are enough `vacationDays` to satisfy the request. If the `vacationDays` is equal to 9 and `requestForVacation(10)` is called by that instance (which will be our structure later on), then it should return `false`.
 
-**(5)** - Lets create an enum. This enum is called `Punishment` and should have three cases. `Severe`, `Light` and `Medium`.
+**(5)** - Lets create an enum. This enum is called `Punishment` and should have three cases. `severe`, `light` and `medium`.
 
 **(6)** - Create a protocol called `Reprimand` which requires that there be two functions. The first function is called `disciplineStudent(_:)` which takes in one argument called `scale` of type `Punishment` and returns a `String`. The second function is called `callParentDeliveringMessage(_:)` which takes in one argument called `scale` of type `Punishment` and returns a `String`.
 
 **(7)** - Create an extension on the `Reprimand` protocol and provide default implementation for the two functions required by this protocol. In your implementation of the `disciplineStudent(_:)` function it should switch on the `scale` argument and return the following `String` based upon that case:
 
-If the case is Severe - "We are expelling you from the school!"  
-If the case is Light - "You're to go back to class, don't do it again."  
-If the case is Medium - "Why would you think that's a good idea?! You're going to detention."  
+If the case is .severe - "We are expelling you from the school!"  
+If the case is .light - "You're to go back to class, don't do it again."  
+If the case is .medium - "Why would you think that's a good idea?! You're going to detention."  
 
 In your implementation of the `callParentDeliveringMessage(_:)` method, it should switch on the `scale` argument and return the following `String` based upon that case:
 
-If the case is Severe - "Your child has been expelled from the school."   
-If the case is Light - "Your child thought it was funny to put gum in Amy's hair."    
-If the case is Medium - "Your child has become a terror in the classroom."  
+If the case is .severe - "Your child has been expelled from the school."   
+If the case is .light - "Your child thought it was funny to put gum in Amy's hair."    
+If the case is .medium - "Your child has become a terror in the classroom."  
 
-**(8)** - Create an enum called `Subject` which has three cases. `Math`, `Science` and `English`.
+**(8)** - Create an enum called `Subject` which has three cases. `math`, `science` and `english`.
 
 **(9)** - Create a protocol called `Teach` which requires that there be one function. That one function should be called `teachSubject(_:)` which takes in one argument called `subject` of type `Subject`. It will return a `String`.
 
@@ -64,9 +64,9 @@ If the case is Medium - "Your child has become a terror in the classroom."
 
 In your implementation, you should switch on the `subject` argument and return the following `String` based upon the specific case.
 
-If the case is Math - "Take out your math books please."  
-If the case is Science - "Time to learn the best subject of all! Science!!"  
-If the case is English - "To read or not to read. Everyone take out your english books.
+If the case is .math - "Take out your math books please."  
+If the case is .science - "Time to learn the best subject of all! Science!!"  
+If the case is .english - "To read or not to read. Everyone take out your english books.
 
 ---
 
