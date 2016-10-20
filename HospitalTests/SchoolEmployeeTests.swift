@@ -76,7 +76,7 @@ class SchoolEmployeeSpec: QuickSpec {
         describe("Principal - Reprimand") {
             it("Should implement the Reprimand protocol correctly.") {
                 
-                let messageForSevere = testPrincpial.disciplineStudent(.Severe)
+                let messageForSevere = testPrincpial.disciplineStudent(.severe)
                 
                 expect(messageForSevere).to(equal("We are expelling you from the school!"))
             }
@@ -114,7 +114,7 @@ class SchoolEmployeeSpec: QuickSpec {
         describe("Teacher - Teach") {
             it("Should adopt The Teach protocol") {
                 
-                let messageForMath = testTeacher.teachSubject(.Math)
+                let messageForMath = testTeacher.teachSubject(.math)
                 
                 expect(messageForMath).to(equal("Take out your math books please."))
                 

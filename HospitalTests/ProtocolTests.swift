@@ -50,17 +50,17 @@ class ProtocolSpec: QuickSpec {
         describe("Reprimand protocol") {
             it("Should provide default implementation of disciplineStudent(_:) function. See instructions for details.") {
                 
-                let messageForSevere = fakeJim.disciplineStudent(.Severe)
-                let messageForLight = fakeJim.disciplineStudent(.Light)
-                let messageForMedium = fakeJim.disciplineStudent(.Medium)
+                let messageForSevere = fakeJim.disciplineStudent(.severe)
+                let messageForLight = fakeJim.disciplineStudent(.light)
+                let messageForMedium = fakeJim.disciplineStudent(.medium)
                 
                 expect(messageForSevere).to(equal("We are expelling you from the school!"))
                 expect(messageForLight).to(equal("You're to go back to class, don't do it again."))
                 expect(messageForMedium).to(equal("Why would you think that's a good idea?! You're going to detention."))
                 
-                let messageForParentSevere = fakeJim.callParentDeliveringMessage(.Severe)
-                let messageForParentLight = fakeJim.callParentDeliveringMessage(.Light)
-                let messageForParentMedium = fakeJim.callParentDeliveringMessage(.Medium)
+                let messageForParentSevere = fakeJim.callParentDeliveringMessage(.severe)
+                let messageForParentLight = fakeJim.callParentDeliveringMessage(.light)
+                let messageForParentMedium = fakeJim.callParentDeliveringMessage(.medium)
                 
                 expect(messageForParentSevere).to(equal("Your child has been expelled from the school."))
                 expect(messageForParentLight).to(equal("Your child thought it was funny to put gum in Amy's hair."))
@@ -72,9 +72,9 @@ class ProtocolSpec: QuickSpec {
         describe("Teach Protocol") {
             it("Should provide default implementation of its teachSubject(_:) method requirement. See instructions for details.") {
                 
-                let messageForMath = fakeJim.teachSubject(.Math)
-                let messageForScience = fakeJim.teachSubject(.Science)
-                let messageForEnglish = fakeJim.teachSubject(.English)
+                let messageForMath = fakeJim.teachSubject(.math)
+                let messageForScience = fakeJim.teachSubject(.science)
+                let messageForEnglish = fakeJim.teachSubject(.english)
                 
                 expect(messageForMath).to(equal("Take out your math books please."))
                 expect(messageForScience).to(equal("Time to learn the best subject of all! Science!!"))
