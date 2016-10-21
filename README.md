@@ -30,7 +30,7 @@ We will be designing a school (focusing on the administrative side, not the stud
 
 In creating these three structures, there's a lot of similarity shared between them. Historically this problem was solved using inheritance (Object-Oriented Programming), but we're going to start with a protocol, not a class. And like I stated, we're going to be creating these as structures, not classes.
 
-A quick overview of the journey we're about to go on. We're going to create a `Payable`, `TimeOff`, `Teach`, `Employee` and `Reprimand` protocol. We will then extend each protocol to provide default implementation. After that we will create our three structures, `AdvisoryBoardMember`, `Principal`, and `Teacher`. Each of these structures will adopt and conform to the protocols we created, but some will conform to only a few. Not ever protocol will be adopted by every structure.
+A quick overview of the journey we're about to go on. We're going to create a `Payable`, `TimeOff`, `Teach`, `Employee` and `Reprimand` protocol. We will then extend each protocol to provide default implementation. After that we will create our three structures, `AdvisoryBoardMember`, `Principal`, and `Teacher`. Each of these structures will adopt and conform to the protocols we created, but some will conform to only a few. Not every protocol will be adopted by every structure.
 
 **(1)** - In the `School.swift` file, create a protocol called `Payable` that has one function requirement. The name of the function should be `wages()`. It takes in no arguments but returns back a `Double`. 
 
