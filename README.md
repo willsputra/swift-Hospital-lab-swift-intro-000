@@ -74,7 +74,7 @@ Lets now head over to the `SchoolEmployees.swift` file. We're going to create ou
 
 **(11)** - Create a new struct called `AdvisoryBoardMember` which has two instance properties (both of which should be variables). One should be called `name` of type `String`. The other should be called `vacationDays` of type `Int` with a default value of `30`. As well, implement the function `wages()` which takes in no argument and returns a `Double`. In your implementation of this function, you should return back the number `100_000.00` (or 100000.00, they are both the same thing).
 
-**(12)** Next is something that will show how powerful these protocols really are. Extend the `AdvisoryBoardMember` class and adopt the following the following protocols in this extension.  
+**(12)** Next is something that will show how powerful these protocols really are. Extend the `AdvisoryBoardMember` struct and adopt the following the following protocols in this extension.  
 
 * `Payable`
 * `TimeOff`
@@ -120,3 +120,5 @@ ALSO!, there are two test files which are making sure you implement everything c
 
 
 <a href='https://learn.co/lessons/AllTheThings' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/swift-Hospital-lab'>Protocol Oriented Programming Lab</a> on Learn.co and start learning to code for free.</p>
